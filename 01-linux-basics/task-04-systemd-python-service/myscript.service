@@ -1,0 +1,14 @@
+[Unit]
+Description=My simple Python Service
+After=network.target
+
+
+[Service]
+ExecStart=/home/aldrin/Documents/devops-journey/01-linux-basics/task-04-systemd-python-service/myscript.service
+Restart=always
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
+
